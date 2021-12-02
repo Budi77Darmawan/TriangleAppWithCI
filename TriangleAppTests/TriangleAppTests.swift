@@ -10,6 +10,7 @@ import XCTest
 
 class TriangleAppTests: XCTestCase {
   
+  
   func testInequalityTriangle() {
     XCTAssertThrowsError(try detectTriangle(4, 1, 2)) { error in
       XCTAssertEqual(error as? TriangleError, TriangleError.inequalityInput)
